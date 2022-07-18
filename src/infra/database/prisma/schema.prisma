@@ -12,7 +12,7 @@ datasource db {
 model Sale{
   id String @id
   seller_name String 
-  visted Int
+  visited Int
   deals Int
   amount Decimal @db.Decimal(10,2)
   date DateTime

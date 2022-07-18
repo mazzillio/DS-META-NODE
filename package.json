@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "ts-node-dev --transpile-only src/infra/server/index.ts",
     "prisma_migrate": "prisma migrate dev --schema=./src/infra/database/prisma/schema.prisma",
-    "scrit_import_sale": "ts-node src/modules/sale/useCases/importSales/index.ts"
+    "script_import_sale": "ts-node src/modules/sale/useCases/importSales/index.ts"
   },
   "prisma": {
     "schema": "src/infra/database/schema.prisma"
