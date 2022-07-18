@@ -12,9 +12,9 @@ datasource db {
 model Sale{
   id String @id
   seller_name String 
-  visted Decimal
-  deals Boolean
-  amount Decimal
+  visted Int
+  deals Int
+  amount Decimal @db.Decimal(10,2)
   date DateTime
   @@map("tb_sales")
 }

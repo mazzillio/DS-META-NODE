@@ -1,8 +1,8 @@
 export interface ISaleDto {
   id?: string;
   seller_name: string;
-  visted: number;
-  deals: boolean;
+  visited: number;
+  deals: number;
   amount: number;
-  date?: Date;
+  date: Date;
 }

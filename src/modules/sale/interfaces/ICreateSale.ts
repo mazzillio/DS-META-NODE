@@ -1,6 +1,7 @@
 export interface ICreateSale {
   seller_name: string;
-  visted: number;
-  deals: boolean;
+  visited: number;
+  deals: number;
   amount: number;
+  date: Date;
 }

@@ -6,15 +6,15 @@ export class Sale {
   id: string;
   seller_name: string;
   visted: number;
-  deals: boolean;
+  deals: number;
   amount: number;
   date: Date;
   constructor(propsSaleDto: ISaleDto) {
     this.id = propsSaleDto.id ?? randomUUID();
     this.seller_name = propsSaleDto.seller_name;
-    this.visted = propsSaleDto.visted;
+    this.visted = propsSaleDto.visited;
     this.deals = propsSaleDto.deals;
     this.amount = propsSaleDto.amount;
-    this.date = propsSaleDto.date ?? new Date();
+    this.date = propsSaleDto.date;
   }
 }
